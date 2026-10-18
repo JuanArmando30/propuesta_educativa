@@ -1,0 +1,711 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Conectados para aprender | Uso educativo y responsable de la tecnología</title>
+  <meta name="description" content="Propuesta educativa para que los estudiantes piensen con sentido crítico, creen y resuelvan problemas reales usando la tecnología de forma responsable, con o sin internet.">
+  <meta name="theme-color" content="#14112E">
+  <meta name="author" content="Juan Armando">
+
+  <!-- Redes sociales (Open Graph / Twitter).
+       IMPORTANTE: cuando publiques la página, cambia TU-DOMINIO.com por la dirección real. -->
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="es_MX">
+  <meta property="og:title" content="Conectados para aprender">
+  <meta property="og:description" content="Seis actividades para usar la tecnología con propósito educativo: buscar información confiable, decidir con responsabilidad, crear y compartir.">
+  <meta property="og:image" content="https://TU-DOMINIO.com/img/og-image.png">
+  <meta property="og:url" content="https://TU-DOMINIO.com/">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Conectados para aprender">
+  <meta name="twitter:description" content="Uso educativo y responsable de la tecnología. Una propuesta con seis actividades.">
+  <meta name="twitter:image" content="https://TU-DOMINIO.com/img/og-image.png">
+
+  <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
+
+  <!-- Tipografías -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500..800&family=Caveat:wght@600;700&family=Figtree:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Bootstrap 5 + iconos -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <!-- Animaciones de librerías externas: AOS (al hacer scroll) y Animate.css (entradas) -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@4.1.1/animate.min.css">
+
+  <link rel="stylesheet" href="css/styles.css">
+  <noscript><style>[data-aos]{opacity:1!important;transform:none!important}</style></noscript>
+</head>
+
+<body>
+  <a class="skip-link" href="#presentacion">Saltar al contenido</a>
+  <div id="progress" aria-hidden="true"></div>
+
+  <!-- ===================== NAVEGACIÓN ===================== -->
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top site-nav" id="mainNav" aria-label="Principal">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center gap-2" href="#inicio">
+        <svg class="brand-mark" viewBox="0 0 40 40" aria-hidden="true">
+          <rect width="40" height="40" rx="12" fill="#5B3DF5"/>
+          <path d="M10 27 L20 12 L30 25" fill="none" stroke="#fff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+          <circle cx="10" cy="27" r="4" fill="#FFC93C"/><circle cx="20" cy="12" r="4" fill="#14D3A0"/><circle cx="30" cy="25" r="4" fill="#FF5E4D"/>
+        </svg>
+        <span>Conectados</span>
+      </a>
+      <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu" aria-controls="navMenu" aria-expanded="false" aria-label="Abrir menú">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navMenu">
+        <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-1">
+          <li class="nav-item"><a class="nav-link" href="#presentacion">Presentación</a></li>
+          <li class="nav-item"><a class="nav-link" href="#justificacion">Justificación</a></li>
+          <li class="nav-item"><a class="nav-link" href="#actividades">Actividades</a></li>
+          <li class="nav-item"><a class="nav-link" href="#recursos">Recursos</a></li>
+          <li class="nav-item"><a class="nav-link" href="#resultados">Resultados</a></li>
+          <li class="nav-item"><a class="nav-link" href="#indicadores">Indicadores</a></li>
+          <li class="nav-item ms-lg-2 mt-2 mt-lg-0"><a class="btn btn-sun btn-sm" href="#difusion"><i class="bi bi-share-fill me-1"></i>Compartir</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+  <!-- ===================== HERO ===================== -->
+  <header id="inicio" class="hero">
+    <div id="tsparticles" aria-hidden="true"></div>
+    <div class="container hero-inner">
+      <div class="row align-items-center g-5">
+        <div class="col-lg-7">
+          <span class="eyebrow animate__animated animate__fadeInDown"><i class="bi bi-stars"></i> Propuesta educativa innovadora</span>
+          <h1 class="hero-title animate__animated animate__fadeInUp">
+            Conectados
+            <span class="hl">para aprender
+              <svg class="hl-line" viewBox="0 0 300 20" preserveAspectRatio="none" aria-hidden="true"><path d="M3 13 C 60 2, 110 20, 160 9 S 255 4, 297 12" pathLength="1"/></svg>
+            </span>
+          </h1>
+          <p class="hero-lead animate__animated animate__fadeInUp animate__delay-1s">Uso educativo y responsable de la tecnología.</p>
+          <p class="hero-typed animate__animated animate__fadeInUp animate__delay-1s">
+            Para aprender a <span class="typed-wrap"><span id="typed">buscar información confiable</span></span>
+          </p>
+          <div class="d-flex flex-wrap gap-3 mt-4 animate__animated animate__fadeInUp animate__delay-2s">
+            <a href="#presentacion" class="btn btn-sun btn-lg">Conoce la propuesta <i class="bi bi-arrow-down ms-1"></i></a>
+            <a href="#difusion" class="btn btn-line btn-lg"><i class="bi bi-share me-2"></i>Compartir</a>
+          </div>
+
+          <dl class="hero-stats row row-cols-2 row-cols-md-4 g-3 mt-4 mb-0">
+            <div class="col"><dt><span class="count" data-to="6">6</span></dt><dd>actividades</dd></div>
+            <div class="col"><dt><span class="count" data-to="3">3</span></dt><dd>momentos de evaluación</dd></div>
+            <div class="col"><dt><span class="count" data-to="4">4</span></dt><dd>instrumentos de seguimiento</dd></div>
+            <div class="col"><dt><span class="count" data-to="5">5</span></dt><dd>tipos de recursos</dd></div>
+          </dl>
+        </div>
+
+        <div class="col-lg-5">
+          <div class="hero-visual" aria-hidden="true">
+            <div class="device">
+              <div class="device-bar"><span></span><span></span><span></span><em>búsqueda segura</em></div>
+              <div class="device-body">
+                <div class="dsearch"><i class="bi bi-search"></i> ¿Esta página es confiable?</div>
+                <div class="res ok"><i class="bi bi-patch-check-fill"></i><div><b>Fuente confiable</b><small>Se sabe quién la publica y coincide con otras fuentes.</small></div></div>
+                <div class="res bad"><i class="bi bi-exclamation-triangle-fill"></i><div><b>Información dudosa</b><small>Nadie firma el texto. Mejor verificar antes de compartir.</small></div></div>
+                <div class="res ok"><i class="bi bi-patch-check-fill"></i><div><b>Dato comparado</b><small>Revisado en varias páginas.</small></div></div>
+                <div class="dprogress"><span>Mi guía de búsquedas seguras</span><div class="bar"><i></i></div></div>
+              </div>
+            </div>
+            <span class="float-chip c1"><i class="bi bi-lightbulb-fill"></i></span>
+            <span class="float-chip c2"><i class="bi bi-shield-check"></i></span>
+            <span class="float-chip c3"><i class="bi bi-people-fill"></i></span>
+            <span class="float-chip c4"><i class="bi bi-camera-video-fill"></i></span>
+            <span class="float-chip c5"><i class="bi bi-chat-heart-fill"></i></span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <a href="#presentacion" class="scroll-cue" aria-label="Bajar a la presentación"><i class="bi bi-chevron-double-down"></i></a>
+  </header>
+
+  <!-- Cinta con palabras clave -->
+  <div class="ticker-wrap" aria-hidden="true"><div class="ticker">
+    <div class="ticker-track">
+      <span>Pensamiento crítico</span><i>✦</i><span>Creatividad</span><i>✦</i><span>Resolver problemas reales</span><i>✦</i><span>Buscar información confiable</span><i>✦</i><span>Con o sin internet</span><i>✦</i><span>Nadie se queda fuera</span><i>✦</i><span>Trabajar en equipo</span><i>✦</i>
+      <span>Pensamiento crítico</span><i>✦</i><span>Creatividad</span><i>✦</i><span>Resolver problemas reales</span><i>✦</i><span>Buscar información confiable</span><i>✦</i><span>Con o sin internet</span><i>✦</i><span>Nadie se queda fuera</span><i>✦</i><span>Trabajar en equipo</span><i>✦</i>
+    </div>
+  </div></div>
+
+  <!-- ===================== 1. PRESENTACIÓN ===================== -->
+  <section id="presentacion" class="section sec-grid">
+    <span class="blob blob-violet" data-parallax="-18" aria-hidden="true"></span>
+    <div class="container position-relative">
+      <div class="sec-head" data-aos="fade-up">
+        <span class="sec-num">01</span>
+        <div>
+          <p class="kicker">Presentación</p>
+          <h2>¿De qué trata esta propuesta?</h2>
+        </div>
+      </div>
+
+      <div class="row g-4">
+        <div class="col-lg-5" data-aos="fade-right">
+          <article class="card-b card-violet">
+            <p class="label">Nombre de la estrategia</p>
+            <i class="bi bi-quote quote-mark" aria-hidden="true"></i>
+            <h3 class="name-big">Conectados para aprender:</h3>
+            <p class="name-sub">uso educativo y responsable de la tecnología</p>
+          </article>
+        </div>
+        <div class="col-lg-7" data-aos="fade-left">
+          <article class="card-b card-ink">
+            <p class="label label-sun">El problema que atiende</p>
+            <h3 class="problem">¿Cómo favorecer el uso educativo y responsable de las tecnologías digitales en los estudiantes?</h3>
+            <p>La tecnología ya forma parte de la vida diaria. Lo importante es aprender a aprovecharla también para <strong>estudiar, investigar, crear y resolver problemas</strong>. Por eso se parte de lo que cada estudiante ya hace, <strong>sin juzgar sus hábitos</strong>.</p>
+            <p class="mb-0 problem-extra"><i class="bi bi-wifi-off"></i><span>La innovación no está en los aparatos, sino en cómo los usamos. Por eso la propuesta busca desarrollar el <strong>pensamiento crítico</strong>, la <strong>creatividad</strong> y la <strong>solución de problemas reales</strong>, y ofrece <strong>alternativas para quienes no tienen internet</strong>, para no crear nuevas desigualdades.</span></p>
+          </article>
+        </div>
+        <div class="col-12" data-aos="fade-up">
+          <article class="card-b card-sun">
+            <div class="row align-items-center g-4">
+              <div class="col-lg-5">
+                <p class="label">Propósito general</p>
+                <p class="purpose">Promover el uso educativo y responsable de la tecnología con <strong>actividades prácticas y colaborativas</strong>.</p>
+              </div>
+              <div class="col-lg-7">
+                <ul class="verbs verbs-2 list-unstyled m-0">
+                  <li><span class="verb-ico"><i class="bi bi-search"></i></span>Buscar información confiable</li>
+                  <li><span class="verb-ico"><i class="bi bi-chat-square-quote"></i></span>Pensar con sentido crítico</li>
+                  <li><span class="verb-ico"><i class="bi bi-brush"></i></span>Crear contenidos</li>
+                  <li><span class="verb-ico"><i class="bi bi-compass"></i></span>Resolver situaciones reales de su entorno</li>
+                  <li><span class="verb-ico"><i class="bi bi-shield-check"></i></span>Decidir con responsabilidad</li>
+                  <li><span class="verb-ico"><i class="bi bi-wifi-off"></i></span>Participar con o sin internet</li>
+                </ul>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== 2. JUSTIFICACIÓN ===================== -->
+  <section id="justificacion" class="section sec-lilac">
+    <span class="blob blob-sun" data-parallax="22" aria-hidden="true"></span>
+    <div class="container position-relative">
+      <div class="row g-5">
+        <div class="col-lg-5">
+          <div class="sticky-lg">
+            <div class="sec-head" data-aos="fade-up">
+              <span class="sec-num">02</span>
+              <div>
+                <p class="kicker">Justificación</p>
+                <h2>¿Por qué es innovadora?</h2>
+              </div>
+            </div>
+            <p class="lead" data-aos="fade-up">No se trata solo de meter herramientas tecnológicas al salón. Se trata de <strong>usarlas con un propósito educativo</strong>: pensar, crear y transformar la realidad, no solo manejar aparatos.</p>
+
+            <blockquote class="big-quote" data-aos="fade-up"><i class="bi bi-quote"></i>La verdadera innovación no está en los dispositivos, sino en cómo los usamos para construir aprendizajes más críticos, participativos e inclusivos.</blockquote>
+
+            <div class="praxis-box" data-aos="zoom-in">
+              <p class="label m-0">Y también es una praxis</p>
+              <div class="praxis" id="praxis" role="img" aria-label="Ciclo de la praxis: partir de la realidad, reflexionar, regresar a la práctica para transformarla">
+                <svg viewBox="0 0 300 300">
+                  <circle class="praxis-orbit" cx="150" cy="150" r="128" fill="none" stroke="#5B3DF5" stroke-opacity=".35" stroke-width="2" stroke-dasharray="3 9" stroke-linecap="round"/>
+                  <circle cx="150" cy="150" r="100" fill="none" stroke="#14112E" stroke-opacity=".1" stroke-width="14"/>
+                  <circle id="praxisRing" cx="150" cy="150" r="100" fill="none" stroke="url(#gPraxis)" stroke-width="14" stroke-linecap="round" pathLength="1" transform="rotate(-90 150 150)"/>
+                  <defs><linearGradient id="gPraxis" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#5B3DF5"/><stop offset=".55" stop-color="#FF5E4D"/><stop offset="1" stop-color="#14D3A0"/></linearGradient></defs>
+                  <g class="praxis-node"><circle cx="150" cy="50" r="22" fill="#FFC93C" stroke="#14112E" stroke-width="3"/><text x="150" y="57" text-anchor="middle" font-size="22" font-weight="800" fill="#14112E">1</text></g>
+                  <g class="praxis-node"><circle cx="236.6" cy="200" r="22" fill="#3EB6FF" stroke="#14112E" stroke-width="3"/><text x="236.6" y="207" text-anchor="middle" font-size="22" font-weight="800" fill="#14112E">2</text></g>
+                  <g class="praxis-node"><circle cx="63.4" cy="200" r="22" fill="#14D3A0" stroke="#14112E" stroke-width="3"/><text x="63.4" y="207" text-anchor="middle" font-size="22" font-weight="800" fill="#14112E">3</text></g>
+                </svg>
+                <span class="praxis-center">Praxis</span>
+              </div>
+              <ol class="praxis-list">
+                <li><b>Partir</b> de la realidad del grupo.</li>
+                <li><b>Reflexionar</b> sobre lo que se hace.</li>
+                <li><b>Regresar a la práctica</b> para transformarla.</li>
+              </ol>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-7">
+          <div class="row g-4">
+            <div class="col-md-6" data-aos="fade-up"><article class="reason"><span class="r-ico bg-violet"><i class="bi bi-diagram-3"></i></span><h3>Es organizada y participativa</h3><p>Seis actividades encadenadas, donde el grupo participa en cada paso y no solo escucha.</p></article></div>
+            <div class="col-md-6" data-aos="fade-up" data-aos-delay="100"><article class="reason"><span class="r-ico bg-coral"><i class="bi bi-bullseye"></i></span><h3>Tecnología con propósito</h3><p>Cada herramienta sirve para algo: aprender, crear o resolver. No se usa por usar.</p></article></div>
+            <div class="col-md-6" data-aos="fade-up"><article class="reason"><span class="r-ico bg-sun"><i class="bi bi-chat-square-quote"></i></span><h3>Piensa de forma crítica y creativa</h3><p>Los estudiantes cuestionan lo que encuentran, comparan fuentes y proponen ideas propias; no solo usan herramientas.</p></article></div>
+            <div class="col-md-6" data-aos="fade-up" data-aos-delay="100"><article class="reason"><span class="r-ico bg-mint"><i class="bi bi-geo-alt"></i></span><h3>Parte de la realidad y busca transformarla</h3><p>Los estudiantes atienden problemas reales de su escuela y su comunidad, y proponen cómo mejorarlos.</p></article></div>
+            <div class="col-md-6" data-aos="fade-up"><article class="reason"><span class="r-ico bg-sky"><i class="bi bi-wifi-off"></i></span><h3>Nadie se queda fuera</h3><p>Cada actividad tiene una versión sin internet, para que la innovación no genere nuevas desigualdades.</p></article></div>
+            <div class="col-md-6" data-aos="fade-up" data-aos-delay="100"><article class="reason"><span class="r-ico bg-pink"><i class="bi bi-arrow-repeat"></i></span><h3>Se mejora sobre la marcha</h3><p>Los resultados permiten revisar la estrategia y hacer cambios cuando hace falta.</p></article></div>
+            <div class="col-md-6" data-aos="fade-up"><article class="reason"><span class="r-ico bg-violet"><i class="bi bi-heart"></i></span><h3>Sin juzgar hábitos</h3><p>Se empieza por lo que ya hacen con la tecnología y desde ahí se construye.</p></article></div>
+            <div class="col-md-6" data-aos="fade-up" data-aos-delay="100"><article class="reason"><span class="r-ico bg-coral"><i class="bi bi-shield-lock"></i></span><h3>Cuida a las personas</h3><p>Se protege la privacidad, se pide permiso para usar imágenes y se respetan los derechos de los demás.</p></article></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Ámbito, viabilidad y costo social -->
+      <div class="grounded" data-aos="fade-up">
+        <h3 class="grounded-title">Una propuesta con los pies en la tierra</h3>
+        <div class="row g-4">
+          <div class="col-md-4"><article class="ground-card"><span class="r-ico bg-violet"><i class="bi bi-mortarboard"></i></span><h4>Ámbito educativo</h4><p>Se trabaja en el aula con los estudiantes y un docente que guía y acompaña. Se conecta con la escuela y la comunidad. El aprendizaje es la meta; la tecnología es solo el medio.</p></article></div>
+          <div class="col-md-4"><article class="ground-card"><span class="r-ico bg-mint"><i class="bi bi-check2-circle"></i></span><h4>Es viable</h4><p>Usa lo que ya hay: celulares compartidos, papel, cuadernos y herramientas gratuitas. Todas las actividades se pueden hacer con o sin internet y sin un dispositivo por estudiante.</p></article></div>
+          <div class="col-md-4"><article class="ground-card"><span class="r-ico bg-coral"><i class="bi bi-people"></i></span><h4>No deja costos sociales</h4><p>No juzga a nadie, cuida la privacidad, pide permiso antes de usar imágenes de otras personas y los compromisos se comparten de forma voluntaria. Ningún estudiante queda fuera por no tener internet.</p></article></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== 3. ACTIVIDADES ===================== -->
+  <section id="actividades" class="section sec-grid">
+    <div class="container position-relative">
+      <div class="sec-head" data-aos="fade-up">
+        <span class="sec-num">03</span>
+        <div>
+          <p class="kicker">Actividades</p>
+          <h2>Seis actividades, un solo camino</h2>
+        </div>
+      </div>
+      <p class="lead mb-5 col-lg-8" data-aos="fade-up">Cada actividad se apoya en la anterior: primero conocemos, luego investigamos, decidimos, creamos, compartimos y reflexionamos. Y todas tienen una <strong>versión sin internet</strong>, para que nadie se quede fuera. <span class="hint">Toca «Ver los pasos» para ver cómo se hace.</span></p>
+
+      <div class="route">
+        <div class="route-line" aria-hidden="true"><i></i></div>
+
+        <article class="route-item" style="--c: var(--sky)">
+          <span class="route-node" aria-hidden="true">1</span>
+          <div class="route-card" data-aos="fade-up">
+            <figure class="route-fig"><img src="img/actividad-1.svg" width="400" height="260" loading="lazy" alt="Estudiantes con una encuesta impresa y un celular conversando sobre cómo usan la tecnología"></figure>
+                        <span class="phase">Diagnóstico</span>
+            <h3>¿Cómo usamos la tecnología?</h3>
+            <p>Conocemos qué dispositivos y aplicaciones usan, para qué los usan y qué ventajas y dificultades encuentran.</p>
+            <p class="makes"><i class="bi bi-flag-fill"></i> Se obtiene: un diagnóstico del grupo</p>
+            <div class="offline"><i class="bi bi-wifi-off" aria-hidden="true"></i><p><b>Sin internet:</b> Encuesta impresa, respuestas levantando la mano y conteo en el pizarrón.</p></div>
+            <button class="btn btn-steps" type="button" data-bs-toggle="collapse" data-bs-target="#pasos1" aria-expanded="false" aria-controls="pasos1"><i class="bi bi-list-check"></i> Ver los pasos</button>
+            <div class="collapse" id="pasos1"><ol class="steps">
+              <li>Contestan una encuesta breve.</li>
+              <li>Cuentan cómo usan la tecnología en su vida y en la escuela.</li>
+              <li>Conversan en grupo sobre ventajas y dificultades.</li>
+              <li>Anotan las ideas y los posibles usos educativos.</li>
+            </ol></div>
+          </div>
+        </article>
+
+        <article class="route-item" style="--c: var(--violet-soft)">
+          <span class="route-node" aria-hidden="true">2</span>
+          <div class="route-card" data-aos="fade-up">
+            <figure class="route-fig"><img src="img/actividad-2.svg" width="400" height="260" loading="lazy" alt="Una lupa revisa una página web con una fuente confiable y otra dudosa"></figure>
+                        <span class="phase">Indagar</span>
+            <h3>Investigadores digitales</h3>
+            <p>Buscan un tema en distintas páginas, comparan las fuentes y aprenden a distinguir la información confiable de la dudosa.</p>
+            <p class="makes"><i class="bi bi-flag-fill"></i> Se obtiene: una guía de búsquedas seguras</p>
+            <div class="offline"><i class="bi bi-wifi-off" aria-hidden="true"></i><p><b>Sin internet:</b> Se comparan fuentes impresas o descargadas antes de clase (libros, periódicos, páginas guardadas) y se pregunta a personas de la comunidad.</p></div>
+            <button class="btn btn-steps" type="button" data-bs-toggle="collapse" data-bs-target="#pasos2" aria-expanded="false" aria-controls="pasos2"><i class="bi bi-list-check"></i> Ver los pasos</button>
+            <div class="collapse" id="pasos2"><ol class="steps">
+              <li>Eligen un tema de sus estudios o de su comunidad.</li>
+              <li>Buscan información en diferentes páginas.</li>
+              <li>Comparan: ¿quién publica?, ¿qué datos da?, ¿coincide con otras fuentes?</li>
+              <li>Detectan ejemplos de información dudosa.</li>
+              <li>Hacen una guía con recomendaciones para buscar de forma segura.</li>
+            </ol></div>
+          </div>
+        </article>
+
+        <article class="route-item" style="--c: var(--coral)">
+          <span class="route-node" aria-hidden="true">3</span>
+          <div class="route-card" data-aos="fade-up">
+            <figure class="route-fig"><img src="img/actividad-3.svg" width="400" height="260" loading="lazy" alt="Tarjetas con situaciones de internet y dos estudiantes que analizan qué decisión tomar"></figure>
+                        <span class="phase">Decidir</span>
+            <h3>Decidimos responsablemente</h3>
+            <p>Analizan en equipo situaciones de todos los días: una noticia dudosa, una foto compartida sin permiso, comentarios ofensivos.</p>
+            <p class="makes"><i class="bi bi-flag-fill"></i> Se obtiene: una lista de acuerdos del grupo</p>
+            <div class="offline"><i class="bi bi-wifi-off" aria-hidden="true"></i><p><b>Sin internet:</b> Las tarjetas de situaciones no necesitan internet: se analizan en equipo, se dramatizan y los acuerdos se escriben en un cartel.</p></div>
+            <button class="btn btn-steps" type="button" data-bs-toggle="collapse" data-bs-target="#pasos3" aria-expanded="false" aria-controls="pasos3"><i class="bi bi-list-check"></i> Ver los pasos</button>
+            <div class="collapse" id="pasos3"><ol class="steps">
+              <li>Leen situaciones cotidianas en tarjetas.</li>
+              <li>En equipos piensan en las posibles consecuencias.</li>
+              <li>Proponen qué harían y explican por qué sería responsable.</li>
+              <li>Comparan las soluciones de todos los equipos.</li>
+              <li>Escriben acuerdos para cuidar la privacidad, respetar a los demás y compartir con cuidado.</li>
+            </ol></div>
+          </div>
+        </article>
+
+        <article class="route-item" style="--c: var(--mint)">
+          <span class="route-node" aria-hidden="true">4</span>
+          <div class="route-card" data-aos="fade-up">
+            <figure class="route-fig"><img src="img/actividad-4.svg" width="400" height="260" loading="lazy" alt="Dos estudiantes crean un producto digital con una computadora, una idea y una infografía"></figure>
+                        <span class="phase">Crear</span>
+            <h3>Creamos una solución digital</h3>
+            <p>Cada equipo elige una necesidad de su escuela o comunidad y la atiende con un producto digital: infografía, video, presentación o guía.</p>
+            <p class="makes"><i class="bi bi-flag-fill"></i> Se obtiene: un producto digital</p>
+            <div class="offline"><i class="bi bi-wifi-off" aria-hidden="true"></i><p><b>Sin internet:</b> El producto puede ser de papel: cartel, periódico mural, guía impresa u obra breve. Si hay un solo dispositivo, los equipos se turnan.</p></div>
+            <button class="btn btn-steps" type="button" data-bs-toggle="collapse" data-bs-target="#pasos4" aria-expanded="false" aria-controls="pasos4"><i class="bi bi-list-check"></i> Ver los pasos</button>
+            <div class="collapse" id="pasos4"><ol class="steps">
+              <li>Identifican una necesidad que se pueda atender con una herramienta digital.</li>
+              <li>Eligen una y proponen una solución con los recursos que tienen.</li>
+              <li>Escogen la herramienta para su producto.</li>
+              <li>Se reparten tareas y lo elaboran, cuidando que la información sea confiable y se respeten los derechos de otras personas.</li>
+              <li>Lo presentan al grupo y explican qué problema atiende.</li>
+            </ol></div>
+          </div>
+        </article>
+
+        <article class="route-item" style="--c: var(--sun)">
+          <span class="route-node" aria-hidden="true">5</span>
+          <div class="route-card" data-aos="fade-up">
+            <figure class="route-fig"><img src="img/actividad-5.svg" width="400" height="260" loading="lazy" alt="Una estudiante expone su trabajo frente al grupo, que hace preguntas"></figure>
+                        <span class="phase">Compartir</span>
+            <h3>Compartimos lo que aprendimos</h3>
+            <p>Los equipos exponen sus productos, escuchan preguntas y sugerencias de sus compañeros y mejoran su trabajo.</p>
+            <p class="makes"><i class="bi bi-flag-fill"></i> Se obtiene: productos mejorados</p>
+            <div class="offline"><i class="bi bi-wifi-off" aria-hidden="true"></i><p><b>Sin internet:</b> Exposición en el salón con carteles o trabajos impresos; las sugerencias se anotan en hojas o notas adhesivas.</p></div>
+            <button class="btn btn-steps" type="button" data-bs-toggle="collapse" data-bs-target="#pasos5" aria-expanded="false" aria-controls="pasos5"><i class="bi bi-list-check"></i> Ver los pasos</button>
+            <div class="collapse" id="pasos5"><ol class="steps">
+              <li>Cada equipo presenta su producto digital.</li>
+              <li>Explica qué necesidad vio, qué herramienta usó y qué aprendió.</li>
+              <li>Recibe preguntas y sugerencias.</li>
+              <li>Se registran las ideas más útiles.</li>
+              <li>Hacen los cambios para mejorar su producto.</li>
+            </ol></div>
+          </div>
+        </article>
+
+        <article class="route-item" style="--c: var(--pink)">
+          <span class="route-node" aria-hidden="true">6</span>
+          <div class="route-card" data-aos="fade-up">
+            <figure class="route-fig"><img src="img/actividad-6.svg" width="400" height="260" loading="lazy" alt="Cuaderno abierto con una lista de compromisos, una estrella y una planta que crece"></figure>
+                        <span class="phase">Reflexionar</span>
+            <h3>Reflexionamos y mejoramos nuestro uso de la tecnología</h3>
+            <p>Comparan lo que pensaban al inicio con lo que aprendieron y hacen un compromiso personal con una acción concreta.</p>
+            <p class="makes"><i class="bi bi-flag-fill"></i> Se obtiene: un compromiso personal</p>
+            <div class="offline"><i class="bi bi-wifi-off" aria-hidden="true"></i><p><b>Sin internet:</b> Se compara la encuesta impresa del inicio con una hoja de reflexión escrita en el cuaderno.</p></div>
+            <button class="btn btn-steps" type="button" data-bs-toggle="collapse" data-bs-target="#pasos6" aria-expanded="false" aria-controls="pasos6"><i class="bi bi-list-check"></i> Ver los pasos</button>
+            <div class="collapse" id="pasos6"><ol class="steps">
+              <li>Retoman la encuesta del inicio y la comparan con lo aprendido.</li>
+              <li>Escriben qué aprendieron, qué les resultó más útil y qué se les dificultó.</li>
+              <li>Hacen un compromiso, por ejemplo: verificar la información antes de compartirla.</li>
+              <li>Comparten voluntariamente algunos compromisos.</li>
+              <li>Revisan qué funcionó y qué se puede mejorar de toda la estrategia.</li>
+            </ol></div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== 4. RECURSOS ===================== -->
+  <section id="recursos" class="section sec-dark">
+    <span class="blob blob-violet dark" data-parallax="-24" aria-hidden="true"></span>
+    <div class="container position-relative">
+      <div class="sec-head" data-aos="fade-up">
+        <span class="sec-num">04</span>
+        <div>
+          <p class="kicker">Recursos</p>
+          <h2>¿Qué se necesita?</h2>
+        </div>
+      </div>
+      <p class="lead mb-5 col-lg-8" data-aos="fade-up">Se usa lo que haya en cada escuela. Y si falta internet o dispositivos, hay un plan B para que todos aprendan lo mismo.</p>
+
+      <div class="row g-4">
+        <div class="col-md-6 col-lg-4" data-aos="fade-up">
+          <article class="res-card tilt"><span class="res-ico bg-sky"><i class="bi bi-laptop"></i></span><h3>Dispositivos</h3><p>Celulares, computadoras o tabletas, los que haya disponibles.</p></article>
+        </div>
+        <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
+          <article class="res-card tilt"><span class="res-ico bg-mint"><i class="bi bi-wifi"></i></span><h3>Internet</h3><p>Acceso a internet cuando sea posible.</p></article>
+        </div>
+        <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="150">
+          <article class="res-card tilt"><span class="res-ico bg-sun"><i class="bi bi-pencil-fill"></i></span><h3>Materiales de siempre</h3><p>Hojas, tarjetas, cuadernos, lápices y pizarrón.</p></article>
+        </div>
+        <div class="col-md-6 col-lg-4" data-aos="fade-up">
+          <article class="res-card tilt"><span class="res-ico bg-coral"><i class="bi bi-magic"></i></span><h3>Herramientas digitales gratuitas</h3><p>Para crear presentaciones, videos, infografías o guías digitales.</p></article>
+        </div>
+        <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
+          <article class="res-card tilt"><span class="res-ico bg-pink"><i class="bi bi-card-checklist"></i></span><h3>Encuestas y ejemplos</h3><p>Encuestas, ejemplos de información y situaciones para analizar.</p></article>
+        </div>
+        <div class="col-md-12 col-lg-4" data-aos="fade-up" data-aos-delay="150">
+          <article class="res-card res-highlight">
+            <i class="bi bi-people-fill"></i>
+            <h3>¿No hay un dispositivo por estudiante?</h3>
+            <p>No pasa nada. Las actividades se adaptan a los recursos disponibles y se trabajan en equipo.</p>
+          </article>
+        </div>
+      </div>
+
+      <!-- Plan B sin internet -->
+      <div class="planb" data-aos="fade-up">
+        <div class="planb-head">
+          <span class="planb-ico"><i class="bi bi-wifi-off"></i></span>
+          <div>
+            <h3>Plan B: alternativas para estudiantes sin internet</h3>
+            <p class="mb-0">La innovación también debe evitar crear nuevas desigualdades. La meta no cambia: pensar con sentido crítico, crear y resolver problemas reales.</p>
+          </div>
+        </div>
+        <div class="row g-3 mt-2">
+          <div class="col-sm-6 col-lg-3"><div class="pb-item"><i class="bi bi-printer"></i><b>Materiales impresos</b><span>Encuestas, tarjetas de situaciones y ejemplos de información en papel.</span></div></div>
+          <div class="col-sm-6 col-lg-3"><div class="pb-item"><i class="bi bi-download"></i><b>Descargar antes</b><span>Páginas, videos y documentos guardados de antemano (en la escuela o con quien tenga conexión) y compartidos por USB o Bluetooth.</span></div></div>
+          <div class="col-sm-6 col-lg-3"><div class="pb-item"><i class="bi bi-people"></i><b>Equipos con roles</b><span>Un dispositivo por equipo; todos participan: quien busca, quien anota, quien explica.</span></div></div>
+          <div class="col-sm-6 col-lg-3"><div class="pb-item"><i class="bi bi-palette"></i><b>Productos sin pantalla</b><span>Carteles, periódico mural, guías impresas, entrevistas a la comunidad y presentaciones orales.</span></div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== 5. RESULTADOS ESPERADOS ===================== -->
+  <section id="resultados" class="section sec-mint">
+    <div class="container position-relative">
+      <div class="sec-head" data-aos="fade-up">
+        <span class="sec-num">05</span>
+        <div>
+          <p class="kicker">Resultados esperados</p>
+          <h2>Lo que se busca lograr</h2>
+        </div>
+      </div>
+
+      <div class="row g-5">
+        <div class="col-lg-6">
+          <h3 class="h-sub" data-aos="fade-up"><i class="bi bi-mortarboard-fill"></i> Aprendizajes</h3>
+          <ul class="outcomes list-unstyled">
+            <li data-aos="fade-up"><span>1</span><div><b>Buscan información confiable.</b> La comparan, la revisan y eligen con criterio.</div></li>
+            <li data-aos="fade-up" data-aos-delay="50"><span>2</span><div><b>Piensan con sentido crítico y con creatividad.</b> Se preguntan, cuestionan lo que ven en internet y proponen ideas propias.</div></li>
+            <li data-aos="fade-up" data-aos-delay="100"><span>3</span><div><b>Deciden con responsabilidad.</b> Cuidan su privacidad, respetan a los demás y comparten con cuidado.</div></li>
+            <li data-aos="fade-up" data-aos-delay="150"><span>4</span><div><b>Crean y resuelven problemas reales.</b> Elaboran contenidos que responden a una necesidad de su escuela o comunidad.</div></li>
+            <li data-aos="fade-up" data-aos-delay="200"><span>5</span><div><b>Trabajan en equipo y comparten.</b> Explican lo que aprendieron y mejoran con las sugerencias de otros.</div></li>
+            <li data-aos="fade-up" data-aos-delay="250"><span>6</span><div><b>Participan con o sin internet.</b> Nadie se queda atrás: todos aprenden lo mismo con las alternativas de cada actividad.</div></li>
+            <li data-aos="fade-up" data-aos-delay="300"><span>7</span><div><b>Asumen compromisos concretos</b> para aprovechar mejor la tecnología.</div></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-6">
+          <h3 class="h-sub" data-aos="fade-up"><i class="bi bi-arrow-left-right"></i> Cambios que se favorecen</h3>
+          <div class="shift-card" data-aos="zoom-in">
+            <div class="shift-toggle btn-group w-100" role="group" aria-label="Ver punto de partida o lo que se busca">
+              <input type="radio" class="btn-check" name="shift" id="shiftA" autocomplete="off" checked>
+              <label class="btn" for="shiftA">Punto de partida</label>
+              <input type="radio" class="btn-check" name="shift" id="shiftB" autocomplete="off">
+              <label class="btn" for="shiftB">Lo que se busca</label>
+            </div>
+            <ul class="shift-list list-unstyled" id="shiftList" aria-live="polite">
+              <li data-a="Usan la tecnología en su vida diaria, a su manera." data-b="También la usan para estudiar, investigar, crear y resolver problemas."><i class="bi bi-phone"></i><span></span></li>
+              <li data-a="Conocen y usan las fuentes que les quedan a la mano." data-b="Comparan fuentes y verifican la información antes de compartirla."><i class="bi bi-search"></i><span></span></li>
+              <li data-a="Toman decisiones cotidianas en internet." data-b="Reconocen riesgos y deciden con responsabilidad: privacidad, respeto y cuidado."><i class="bi bi-shield-check"></i><span></span></li>
+              <li data-a="Ven necesidades en su escuela y su comunidad." data-b="Proponen y crean soluciones en equipo, con o sin pantallas."><i class="bi bi-lightbulb"></i><span></span></li>
+              <li data-a="El acceso a internet y a dispositivos es distinto en cada casa." data-b="Todas y todos participan: la innovación no crea nuevas desigualdades."><i class="bi bi-wifi-off"></i><span></span></li>
+            </ul>
+            <p class="shift-note"><i class="bi bi-info-circle"></i> El punto de partida cambia en cada grupo; por eso la primera actividad lo explora.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== 6. INDICADORES ===================== -->
+  <section id="indicadores" class="section sec-grid">
+    <div class="container position-relative">
+      <div class="sec-head" data-aos="fade-up">
+        <span class="sec-num">06</span>
+        <div>
+          <p class="kicker">Indicadores de evaluación</p>
+          <h2>¿Cómo sabemos que avanzan?</h2>
+        </div>
+      </div>
+
+      <div class="row g-5">
+        <div class="col-lg-5">
+          <p class="lead" data-aos="fade-up">Se evalúa en tres momentos para conocer los avances y también las dificultades, y se valora el pensamiento crítico y creativo, no solo el uso de herramientas.</p>
+          <ol class="moments list-unstyled" data-aos="fade-up">
+            <li style="--c: var(--sky)"><b>Al inicio</b><span>Se revisa la encuesta para saber cómo usan la tecnología.</span></li>
+            <li style="--c: var(--sun)"><b>Durante el proceso</b><span>Se observa la participación (de todos, con o sin internet), el trabajo en equipo, la búsqueda de información y las decisiones.</span></li>
+            <li style="--c: var(--mint)"><b>Al final</b><span>Se revisan los productos y se compara con lo que sabían al inicio. Hay una reflexión en grupo.</span></li>
+          </ol>
+          <p class="label mb-2" data-aos="fade-up">Instrumentos</p>
+          <div class="chips" data-aos="fade-up">
+            <span><i class="bi bi-clipboard-data"></i> Encuesta inicial</span>
+            <span><i class="bi bi-card-checklist"></i> Lista de cotejo</span>
+            <span><i class="bi bi-eye"></i> Observación</span>
+            <span><i class="bi bi-folder2-open"></i> Trabajos realizados</span>
+          </div>
+        </div>
+
+        <div class="col-lg-7" data-aos="fade-left">
+          <div class="checklist-card">
+            <div class="checklist-top">
+              <div class="ring" aria-hidden="true">
+                <svg viewBox="0 0 120 120"><circle cx="60" cy="60" r="50" fill="none" stroke="#14112E" stroke-opacity=".1" stroke-width="12"/><circle id="ckRing" cx="60" cy="60" r="50" fill="none" stroke="#14D3A0" stroke-width="12" stroke-linecap="round" pathLength="1" transform="rotate(-90 60 60)"/></svg>
+                <span id="ckCount">0/10</span>
+              </div>
+              <div>
+                <h3>Prueba la lista de cotejo</h3>
+                <p class="mb-0" id="ckMsg">Marca los indicadores que un estudiante ya muestra y mira cómo avanza.</p>
+              </div>
+            </div>
+
+            <fieldset class="ck-group" style="--c: var(--sky)">
+              <legend>Inicio</legend>
+              <label class="ck"><input type="checkbox" class="form-check-input"><span>Cuenta qué dispositivos y aplicaciones usa, y para qué.</span></label>
+              <label class="ck"><input type="checkbox" class="form-check-input"><span>Identifica ventajas y dificultades al usar la tecnología.</span></label>
+            </fieldset>
+            <fieldset class="ck-group" style="--c: var(--sun)">
+              <legend>Durante</legend>
+              <label class="ck"><input type="checkbox" class="form-check-input"><span>Compara fuentes y explica por qué eligió una información.</span></label>
+              <label class="ck"><input type="checkbox" class="form-check-input"><span>Reconoce riesgos, propone soluciones y justifica sus decisiones.</span></label>
+              <label class="ck"><input type="checkbox" class="form-check-input"><span>Cuestiona la información y propone ideas propias con creatividad.</span></label>
+              <label class="ck"><input type="checkbox" class="form-check-input"><span>Participa y colabora con su equipo.</span></label>
+              <label class="ck"><input type="checkbox" class="form-check-input"><span>Participa en todo aunque no tenga internet o dispositivo propio.</span></label>
+            </fieldset>
+            <fieldset class="ck-group" style="--c: var(--mint)">
+              <legend>Final</legend>
+              <label class="ck"><input type="checkbox" class="form-check-input"><span>Su producto responde al problema que identificó, con creatividad y uso responsable de la información.</span></label>
+              <label class="ck"><input type="checkbox" class="form-check-input"><span>Explica con claridad lo que aprendió e incorpora sugerencias.</span></label>
+              <label class="ck"><input type="checkbox" class="form-check-input"><span>Compara lo inicial con lo final y asume un compromiso personal concreto.</span></label>
+            </fieldset>
+            <button class="btn btn-reset" type="button" id="ckReset"><i class="bi bi-arrow-counterclockwise"></i> Reiniciar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== 7. DISEÑO Y DIFUSIÓN ===================== -->
+  <section id="difusion" class="section sec-share">
+    <span class="blob blob-coral dark" data-parallax="20" aria-hidden="true"></span>
+    <div class="container position-relative">
+      <div class="sec-head" data-aos="fade-up">
+        <span class="sec-num">07</span>
+        <div>
+          <p class="kicker">Diseño y difusión</p>
+          <h2>Ayúdanos a que llegue a más personas</h2>
+        </div>
+      </div>
+      <p class="lead mb-5 col-lg-8" data-aos="fade-up">Descarga una imagen, elige un texto corto y compártelo en tus redes. También puedes copiar el enlace o enseñar el código QR.</p>
+
+      <div class="row g-5">
+        <!-- Imágenes -->
+        <div class="col-lg-6" data-aos="fade-right">
+          <h3 class="h-sub light"><i class="bi bi-images"></i> Imágenes para compartir</h3>
+          <div id="cardsCarousel" class="carousel slide" data-bs-interval="false">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <div class="scard scard-1">
+                  <div class="sc-top"><span class="sc-dot"></span>Conectados para aprender</div>
+                  <div class="sc-mid"><p class="sc-tag">Propuesta educativa</p><h4>Conectados para aprender</h4><p class="sc-text">Usar la tecnología para estudiar, investigar, crear y resolver problemas de nuestro entorno.</p></div>
+                  <div class="sc-bot">#ConectadosParaAprender</div>
+                  <svg class="sc-net" viewBox="0 0 200 120" aria-hidden="true"><g stroke="#fff" stroke-opacity=".5" stroke-width="2" fill="none"><path d="M20 100 L70 40 L130 80 L180 20"/><path d="M70 40 L110 15"/></g><g><circle cx="20" cy="100" r="9" fill="#FFC93C"/><circle cx="70" cy="40" r="9" fill="#14D3A0"/><circle cx="130" cy="80" r="9" fill="#FF5E4D"/><circle cx="180" cy="20" r="9" fill="#3EB6FF"/><circle cx="110" cy="15" r="6" fill="#fff"/></g></svg>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="scard scard-2">
+                  <div class="sc-top"><span class="sc-dot"></span>Conectados para aprender</div>
+                  <div class="sc-mid"><p class="sc-tag">Antes de compartir</p><h4>Verifica, compara y luego comparte</h4><p class="sc-text">¿Quién lo publica? ¿Qué datos presenta? ¿Coincide con otras fuentes confiables?</p></div>
+                  <div class="sc-bot">#ConectadosParaAprender</div>
+                  <svg class="sc-net" viewBox="0 0 120 120" aria-hidden="true"><circle cx="50" cy="50" r="34" fill="none" stroke="#14112E" stroke-width="10"/><path d="M76 76 L108 108" stroke="#14112E" stroke-width="12" stroke-linecap="round"/><path d="M34 51 L46 63 L68 38" fill="none" stroke="#14112E" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="scard scard-3">
+                  <div class="sc-top"><span class="sc-dot"></span>Conectados para aprender</div>
+                  <div class="sc-mid"><p class="sc-tag">6 actividades</p><h4>Buscar. Decidir. Crear. Compartir.</h4><p class="sc-text">Un camino práctico para usar la tecnología con propósito educativo.</p></div>
+                  <div class="sc-bot">#ConectadosParaAprender</div>
+                  <svg class="sc-net" viewBox="0 0 200 60" aria-hidden="true"><path d="M10 30 H190" stroke="#fff" stroke-opacity=".5" stroke-width="3" stroke-dasharray="2 8" stroke-linecap="round"/><g stroke="#14112E" stroke-width="3"><circle cx="15" cy="30" r="11" fill="#3EB6FF"/><circle cx="55" cy="30" r="11" fill="#8F7CFF"/><circle cx="95" cy="30" r="11" fill="#FF5E4D"/><circle cx="135" cy="30" r="11" fill="#14D3A0"/><circle cx="175" cy="30" r="11" fill="#FFC93C"/></g></svg>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="scard scard-4">
+                  <div class="sc-top"><span class="sc-dot"></span>Conectados para aprender</div>
+                  <div class="sc-mid"><p class="sc-tag">Inclusión</p><h4>Con o sin internet, nadie se queda fuera</h4><p class="sc-text">Cada actividad tiene una versión sin conexión. La innovación no debe crear nuevas desigualdades.</p></div>
+                  <div class="sc-bot">#ConectadosParaAprender</div>
+                  <svg class="sc-net" viewBox="0 0 120 120" aria-hidden="true"><g fill="none" stroke="#fff" stroke-width="9" stroke-linecap="round"><path d="M18 52 Q60 14 102 52"/><path d="M36 72 Q60 50 84 72"/></g><circle cx="60" cy="92" r="8" fill="#fff" stroke="none"/><path d="M20 108 L100 14" stroke="#14112E" stroke-width="10" stroke-linecap="round"/></svg>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-bar">
+              <button class="btn btn-round" type="button" data-bs-target="#cardsCarousel" data-bs-slide="prev" aria-label="Imagen anterior"><i class="bi bi-chevron-left"></i></button>
+              <div class="carousel-indicators position-static m-0">
+                <button type="button" data-bs-target="#cardsCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Imagen 1"></button>
+                <button type="button" data-bs-target="#cardsCarousel" data-bs-slide-to="1" aria-label="Imagen 2"></button>
+                <button type="button" data-bs-target="#cardsCarousel" data-bs-slide-to="2" aria-label="Imagen 3"></button>
+                <button type="button" data-bs-target="#cardsCarousel" data-bs-slide-to="3" aria-label="Imagen 4"></button>
+              </div>
+              <button class="btn btn-round" type="button" data-bs-target="#cardsCarousel" data-bs-slide="next" aria-label="Imagen siguiente"><i class="bi bi-chevron-right"></i></button>
+              <button class="btn btn-sun ms-auto" type="button" id="dlCard"><i class="bi bi-download me-1"></i> Descargar imagen</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Texto + enlace -->
+        <div class="col-lg-6" data-aos="fade-left">
+          <h3 class="h-sub light"><i class="bi bi-chat-quote"></i> Texto corto para tu publicación</h3>
+          <div class="post-opts" role="group" aria-label="Elegir texto">
+            <button type="button" class="btn btn-chip active" data-post="0">Presentación</button>
+            <button type="button" class="btn btn-chip" data-post="1">Información confiable</button>
+            <button type="button" class="btn btn-chip" data-post="2">Las actividades</button>
+            <button type="button" class="btn btn-chip" data-post="3">Sin internet</button>
+          </div>
+          <label for="shareText" class="visually-hidden">Texto de la publicación</label>
+          <textarea id="shareText" class="form-control post-text" rows="4"></textarea>
+
+          <h3 class="h-sub light mt-4"><i class="bi bi-link-45deg"></i> Enlace para compartir</h3>
+          <div class="input-group link-group">
+            <input type="text" class="form-control" id="shareUrl" readonly aria-label="Enlace de la página">
+            <button class="btn btn-sun" type="button" id="copyBtn"><i class="bi bi-clipboard me-1"></i> Copiar</button>
+          </div>
+          <p class="url-hint" id="urlHint" hidden><i class="bi bi-info-circle"></i> Estás viendo el archivo desde tu computadora. Cuando publiques la página, aquí aparecerá su enlace real.</p>
+
+          <div class="share-grid">
+            <a id="sh-wa" class="sh sh-wa" target="_blank" rel="noopener"><i class="bi bi-whatsapp"></i> WhatsApp</a>
+            <a id="sh-fb" class="sh sh-fb" target="_blank" rel="noopener"><i class="bi bi-facebook"></i> Facebook</a>
+            <a id="sh-x" class="sh sh-x" target="_blank" rel="noopener"><i class="bi bi-twitter-x"></i> X</a>
+            <a id="sh-tg" class="sh sh-tg" target="_blank" rel="noopener"><i class="bi bi-telegram"></i> Telegram</a>
+            <a id="sh-in" class="sh sh-in" target="_blank" rel="noopener"><i class="bi bi-linkedin"></i> LinkedIn</a>
+            <a id="sh-mail" class="sh sh-mail"><i class="bi bi-envelope-fill"></i> Correo</a>
+            <button id="shNative" class="sh sh-native" type="button" hidden><i class="bi bi-box-arrow-up"></i> Más opciones</button>
+          </div>
+
+          <div class="qr-box">
+            <div id="qr" aria-label="Código QR con el enlace de la página" role="img"></div>
+            <p class="mb-0"><b>Código QR</b><br>Para carteles, presentaciones o grupos escolares: se escanea con la cámara del celular.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="d-flex flex-column flex-md-row justify-content-between align-items-md-center gap-3">
+        <div>
+          <p class="foot-title">Conectados para aprender</p>
+          <p class="foot-sub">Uso educativo y responsable de la tecnología · Propuesta educativa innovadora</p>
+        </div>
+        <a href="#inicio" class="btn btn-line btn-sm align-self-start"><i class="bi bi-arrow-up me-1"></i> Volver arriba</a>
+      </div>
+      <div class="foot-author">
+        <span class="author-badge" aria-hidden="true">JA</span>
+        <div>
+          <p class="author-label">Autor de la propuesta y de la página</p>
+          <p class="author-name">Juan Armando</p>
+        </div>
+      </div>
+      <p class="foot-credits">Animaciones con librerías abiertas: AOS, Animate.css, GSAP, Typed.js, tsParticles, Vanilla Tilt y canvas-confetti. Ilustraciones originales. Hecho con Bootstrap 5. © 2026</p>
+    </div>
+  </footer>
+
+  <!-- Aviso al copiar -->
+  <div class="toast-container position-fixed bottom-0 start-50 translate-middle-x p-3">
+    <div id="copyToast" class="toast align-items-center text-bg-dark border-0" role="status" aria-live="polite" aria-atomic="true">
+      <div class="d-flex"><div class="toast-body" id="toastMsg">¡Enlace copiado!</div><button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast" aria-label="Cerrar"></button></div>
+    </div>
+  </div>
+
+  <!-- Librerías (todas con versión fija) -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.1.0/dist/typed.umd.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@tsparticles/slim@3.5.0/tsparticles.slim.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vanilla-tilt@1.8.1/dist/vanilla-tilt.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.3/dist/confetti.browser.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/html2canvas@1.4.1/dist/html2canvas.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/qrcode-generator@1.4.4/qrcode.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
